@@ -1,7 +1,9 @@
 import 'dart:io';
 
 void main(){
+  List<String> notas = <String>[];
   getComando();
+  adicionaNotas(notas);
 }
 
 String getComando(){
@@ -17,4 +19,18 @@ String getComando(){
   }
 
   return entrada!;
+}
+
+List<String> adicionaNotas(List<String> notas){
+  print("Escreva uma nota: ");
+  String? nota = "";
+
+  nota = stdin.readLineSync();
+
+  if (nota == null || nota.isEmpty) {
+    print("Não é possivel adicionar uma nota vazia");
+    adicionaNotas(notas);
+  }
+  notas.add(nota!);
+  return notas;
 }
