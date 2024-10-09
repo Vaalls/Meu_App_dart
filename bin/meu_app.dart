@@ -1,8 +1,11 @@
 import 'dart:io';
 
+// Null safety = Segurança contra valores nulos
+
 void main() {
-  print("Olá me chamo GABRIEL. Qual seu nome?");
-   // Função capturar entrada
-  var entrada =  stdin.readLineSync();
-  print("Muito prazer, $entrada. Vamos programar!!");
+  var numeroUm = stdin.readLineSync();
+  var numeroDois = stdin.readLineSync();
+
+  // ! = Garantimos que os valores nao viram nulos
+  print(numeroUm! + numeroDois!);
 }
