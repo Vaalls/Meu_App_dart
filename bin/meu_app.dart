@@ -44,7 +44,7 @@ void main() {
   }
 
   void getOperacao() {
-    print("Digite uma operação:");
+    print("Digite uma operação ${operacoes.toString()}");
     entrada = stdin.readLineSync();
     if (entrada != null) {
       if (operacoes.contains(entrada)) {
