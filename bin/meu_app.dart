@@ -49,6 +49,9 @@ void main() {
     if (entrada != null) {
       if (operacoes.contains(entrada)) {
         operacao = entrada!;
+      } else {
+        print("Operação inválida!\n");
+        getOperacao();
       }
     }
   }
