@@ -26,17 +26,17 @@ void main() {
 
   if (operacao == "+"){
     soma();
-  }
-
-  if (operacao == "-") {
-    subtracao();
-  }
-
-  if (operacao == "*") {
-    multiplicacao();
-  }
-
-  if (operacao == "/") {
-    divisao();
+  } else {
+     if (operacao == "-") {
+      subtracao();
+    } else{
+      if (operacao == "*") {
+        multiplicacao();
+      } else{
+        if (operacao == "/") {
+          divisao();
+        }
+      }
+    }
   }
 }
